@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>App Notas</title>
+</head>
+<body>
+  <h1>Mis notas</h1>
+  <input id="nota" placeholder="Escribe una nota">
+  <button onclick="agregar()">Agregar</button>
+  <ul id="lista"></ul>
+  <script>
+    function agregar() {
+      const texto = document.getElementById("nota").value;
+      const item = document.createElement("li");
+      item.textContent = texto;
+      document.getElementById("lista").appendChild(item);
+    }
+  </script>
+</body>
+</html>
